@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "903563074290",
+    "project_id": "curvitae-b2fe5",
+    "storage_bucket": "curvitae-b2fe5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903563074290:android:7bb878c6c12795c672ce6b",
+        "android_client_info": {
+          "package_name": "com.example.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903563074290-1eoo53l74dbsnr9h0ptllqmsjfg3674n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpY5GvVSOwxCFCLMLJgJhBdHwBqFpUDek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903563074290-1eoo53l74dbsnr9h0ptllqmsjfg3674n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903563074290:android:9cdd3a89fa61105972ce6b",
+        "android_client_info": {
+          "package_name": "com.nyxara_in.CurVitae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903563074290-1eoo53l74dbsnr9h0ptllqmsjfg3674n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpY5GvVSOwxCFCLMLJgJhBdHwBqFpUDek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903563074290-1eoo53l74dbsnr9h0ptllqmsjfg3674n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
