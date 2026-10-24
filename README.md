@@ -1,4 +1,4 @@
-# CurViae
+# CurVitae
 
 A new Flutter project.
 
