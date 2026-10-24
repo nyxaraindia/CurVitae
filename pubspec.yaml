@@ -80,7 +80,6 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - key.env
     - assets/logo.png
     - assets/curvitae_logo.png
 
