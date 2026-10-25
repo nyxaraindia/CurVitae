@@ -1,3 +1,4 @@
+<img width="1366" height="768" alt="Gemini_Generated_Image_8zzivl8zzivl8zzi" src="https://github.com/user-attachments/assets/0a725ccb-9401-47f1-8df0-6b0f2ccd3e5b" />
 <div align="center">
 
 # 📄 CurVitae
