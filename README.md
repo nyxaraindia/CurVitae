@@ -9,16 +9,7 @@ An intelligent, cross-platform CV builder powered by Flutter and Nyxara AI. Desi
 
 [![Latest Release](https://img.shields.io/github/v/release/nyxaraindia/CurVitae?style=for-the-badge&color=007ACC)](https://github.com/nyxaraindia/CurVitae/releases)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![License](https://img.shields.io/github/license/nyxaraindia/CurVitae?style=for-the-badge&color=green)](LICENSE)
 
-<br/>
-
-<!-- Replace with your main promo banner image link -->
-![CurVitae Banner](https://raw.githubusercontent.com/nyxaraindia/CurVitae/main/assets/banner.png)
-
-</div>
-
----
 
 ## ✨ Features
 
@@ -28,18 +19,6 @@ An intelligent, cross-platform CV builder powered by Flutter and Nyxara AI. Desi
 - 🛡️ **Privacy-First Data Architecture** — Client-side data storage keeps sensitive personal history secure.
 - 📊 **Skill Gap & Keyword Analysis** — Highlights missing skills and suggests high-impact verbs.
 - 📄 **One-Click Export** — Export clean vector PDFs instantly.
-
----
-
-## 📱 Screenshots
-
-<div align="center">
-
-| Form Entry | Template Preview | AI Suggestions | PDF Export |
-|---|---|---|---|
-| <img src="assets/screenshots/screen1.png" width="200"/> | <img src="assets/screenshots/screen2.png" width="200"/> | <img src="assets/screenshots/screen3.png" width="200"/> | <img src="assets/screenshots/screen4.png" width="200"/> |
-
-</div>
 
 ---
 
