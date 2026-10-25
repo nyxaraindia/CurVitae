@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurVitae - AI-Crafted Resumes by NYXARA</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #070913;
+            --card-bg: rgba(18, 22, 41, 0.7);
+            --border: rgba(139, 92, 246, 0.2);
+            --primary-blue: #00d2ff;
+            --primary-purple: #9d4edd;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(157, 78, 221, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.15) 0%, transparent 40%);
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .brand span {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Section */
+        header.hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            background: rgba(157, 78, 221, 0.15);
+            border: 1px solid var(--border);
+            color: var(--primary-blue);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-sub);
+            max-width: 680px;
+            margin-bottom: 36px;
+        }
+
+        /* Download Button */
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            background: linear-gradient(135deg, #0284c7, #7c3aed);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 18px 40px;
+            border-radius: 14px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 210, 255, 0.5);
+        }
+
+        /* Features Section */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 60px 0 30px;
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease, border 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+        }
+
+        .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* NYXARA Company Banner */
+        .nyxara-section {
+            max-width: 1100px;
+            margin: 80px auto;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 27, 75, 0.9));
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .nyxara-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .nyxara-info h2 {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nyxara-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .service-tag {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="brand">
+            ⚡ <span>CurVitae</span>
+        </div>
+        <div class="service-tag">Powered by NYXARA</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="badge">✨ Powered by Nyxara AI</div>
+        <h1>Your Career Path, <span>Perfected.</span></h1>
+        <p class="subtitle">Build recruiter-ready, ATS-optimized resumes on your mobile device. Instant keyword targeting, AI phrasing, and vector PDF exports.</p>
+        
+        <!-- DIRECT APK DOWNLOAD LINK WITH FILENAME "CurVitae.apk" -->
+        <a href="https://github.com/nyxaraindia/CurVitae/releases/latest/download/app-release.apk" class="cta-btn" download="CurVitae.apk">
+            <span>📥 Download Android APK</span>
+        </a>
+    </header>
+
+    <!-- App Features Grid -->
+    <h2 class="section-title">Core Features</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="card-icon">🧠</div>
+            <h3>AI Resume Optimization</h3>
+            <p>Analyzes job descriptions and refines phrasing using integrated Nyxara AI algorithms.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Recruiter-Ready Formats</h3>
+            <p>Choose from clean, ATS-friendly resume layouts designed to pass HR tracking systems.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🛡️</div>
+            <h3>Privacy-First Engine</h3>
+            <p>Your personal details remain safe and stored locally on your device with local architecture.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📄</div>
+            <h3>One-Click PDF Export</h3>
+            <p>Generates high-resolution vector PDFs instantly, ready to attach to job applications.</p>
+        </div>
+    </div>
+
+    <!-- NYXARA Company Showcase -->
+    <div class="nyxara-section">
+        <div class="nyxara-info">
+            <h2>NYXARA</h2>
+            <p>Engineered by NYXARA — delivering next-generation digital applications, intelligent AI models, and custom software architectures.</p>
+            <div class="nyxara-services">
+                <span class="service-tag">📱 Android App Development</span>
+                <span class="service-tag">🤖 AI-Integrated Applications</span>
+                <span class="service-tag">💻 IT Solutions & Services</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 NYXARA. All rights reserved. • CurVitae Open Source Release</p>
+    </footer>
+
+</body>
+</html>
