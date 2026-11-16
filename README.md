@@ -179,8 +179,6 @@ If you are running the code locally, make sure the required credentials and gene
 
 ## 📜 License
 
-**Proprietary License — not MIT.**
-
 Copyright © NYXARA_IN. All rights reserved.
 
 This repository and its contents are proprietary to NYXARA_IN. No license or permission is granted to use, copy, modify, distribute, sublicense, or create derivative works from this project, in whole or in part, without prior written permission from NYXARA_IN, except where applicable law requires otherwise. Third-party components remain subject to their respective licenses.
