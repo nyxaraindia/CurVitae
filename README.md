@@ -6,7 +6,7 @@
 
 **Your Career, AI-Crafted.**
 
-An intelligent, cross-platform CV builder powered by Flutter and Nyxara AI. CurVitae helps users turn resumes, notes, and career details into polished, recruiter-ready PDF CVs with AI-assisted rewriting and export-ready formatting.
+An intelligent, cross-platform CV builder powered by Flutter and Nyxara AI. CurVitae helps users turn resumes, notes, and career details into polished, recruiter-ready PDF CVs with AI-assisted rewriting, formatting, and export.
 
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
@@ -174,3 +174,13 @@ flutter test
 This project is actively evolving and may require project-specific setup for Firebase and AI credentials depending on your environment.
 
 If you are running the code locally, make sure the required credentials and generated Firebase configuration files are in place before launching the app.
+
+---
+
+## 📜 License
+
+**Proprietary License — not MIT.**
+
+Copyright © NYXARA_IN. All rights reserved.
+
+This repository and its contents are proprietary to NYXARA_IN. No license or permission is granted to use, copy, modify, distribute, sublicense, or create derivative works from this project, in whole or in part, without prior written permission from NYXARA_IN, except where applicable law requires otherwise. Third-party components remain subject to their respective licenses.
